@@ -14,6 +14,11 @@
           </small>
         </footer>
       </blockquote>
+      <v-color-picker
+        class="ma-2"
+        show-swatches
+        swatches-max-height="300px"
+      ></v-color-picker>
     </v-col>
   </v-row>
 </template>
