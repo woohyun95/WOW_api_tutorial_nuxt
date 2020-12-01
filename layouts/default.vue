@@ -112,6 +112,16 @@ export default {
       rightDrawer: false,
       title: 'Vuetify.js'
     }
+  },
+  async mounted() {
+    // await 여기서도 사용가능
+    // let isGetToken = getAceessokn~
+    // if(isGetToken) slug ~ 처리~
+    await this.$store.dispatch('getAccessToken')
+    if(this.$store.state.accessToken !== 'default Token String'){
+      this.$store.dispatch('getRealmSlug')
+    }else{
+    }
   }
 }
 </script>
