@@ -27,7 +27,6 @@
                 <h1 :style="characterNameStyle">
                   {{this.$store.state.characterName}}
                 </h1>
-                <!--<h1 style="color: #d59012">color test</h1>-->
               </v-col>
               <v-col xs="12" md="6">
                 <v-row>
