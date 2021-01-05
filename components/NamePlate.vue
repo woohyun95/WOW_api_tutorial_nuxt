@@ -13,7 +13,7 @@
             min-width="150px"
             max-width="180px"
             max-height="180px"
-            src="https://render-kr.worldofwarcraft.com/character/azshara/0/119314432-avatar.jpg"
+            :src=imgSource
           ></v-img>
           <v-flex xs12>
             <v-card-title primary-title>
@@ -65,7 +65,14 @@
 <script>
   export default {
     name: "NamePlate",
+    data(){
+      return{
+      }
+    },
     computed: {
+      imgSource:function(){
+        return this.$store.state.characterMedia['avatar']
+      },
       characterNameStyle: function () {
         let red = 255
         let green = 255

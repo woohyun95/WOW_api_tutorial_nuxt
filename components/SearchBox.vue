@@ -1,5 +1,5 @@
 <template>
-  <v-form><!--검색창 정렬 맞추기-textfield-->
+  <v-form>
     <v-container>
       <v-layout>
         <v-flex xs4>
@@ -57,11 +57,10 @@
         this.$store.dispatch('getCharacterData',this.getSearchData())
       },
       getSearchData(){
-        let charData = {
+        return {
           characterName : this.characterData['characterName'],
           realmSlug : this.characterData['realmSlug']
         }
-        return charData
       }
   },
     computed:{

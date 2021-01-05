@@ -1,11 +1,7 @@
-import {getAccessToken} from './getAccessToken'
-import {getRealmSlug} from './getRealmSlug'
 import {getCharacterData} from './getCharacterData'
-import {getCharacterProfile} from './getCharacterProfile'
+import {initPage} from "./initPage";
 
 export default {
-  getAccessToken: getAccessToken,
-  getRealmSlug:getRealmSlug,
   getCharacterData:getCharacterData,
-  getCharacterProfile:getCharacterProfile
+  initPage:initPage
 }
